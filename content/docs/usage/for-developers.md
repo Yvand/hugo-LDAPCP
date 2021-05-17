@@ -24,12 +24,13 @@ However, there are still some scenarios where a developer may want to customize 
 ## How to proceed
 
 For that, the class LDAPCP can be inherited to create a class that will be a new, unique claims provider in SharePoint.  
-[Each release](https://github.com/Yvand/LDAPCP/releases) comes with a Visual Studio sample project "LDAPCP.Developers.zip". It contains several sample classes that demonstrates various customizations capabilities.
-Each class inheriting LDAPCP is a unique claims provider, and only 1 can be installed at a time by the feature event receiver.
+[Each release](https://github.com/Yvand/LDAPCP/releases) comes with a Visual Studio sample project "LDAPCP.Developers.zip". It contains several sample classes that demonstrate various customizations capabilities.
 
-Common mistakes to avoid:
+## Things to know
 
+- Each class inheriting LDAPCP is a new claims provider, uniquely defined by the name of its class.
+- Sample project has 1 feature event receiver, and it can manage only 1 claims provider.
 - Both LDAPCP.wsp and the custom version need ldapcp.dll. Be aware that updating / removing one package will affect the ldapcp.dll used by the other.
-- **Always deactivate the farm feature adding the claims provider before retracting the solution**. [Check this page]({{< ref "/docs/usage/remove" >}}) for more information.
+- To avoid deployment issues, always deactivate the farm feature (which manages the claims provider) before retracting the solution.
 
 If something goes wrong during solution deployment, [check this page]({{< ref "/docs/help/fix-setup-issues" >}}) to resolve problems.  
