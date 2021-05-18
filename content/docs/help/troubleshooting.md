@@ -1,7 +1,7 @@
 ---
 title: "Troubleshooting"
 description: ""
-lead: "This article groups tips & tricks to help you troubleshooting LDAPCP in case it's not working as it should."
+lead: "This article groups tips & tricks to help you troubleshoot LDAPCP if it's not working as expected."
 date: 2021-05-17T13:24:28Z
 lastmod: 2021-05-17T13:24:28Z
 draft: false
@@ -15,16 +15,29 @@ toc: true
 
 ## Check the SharePoint logs
 
-LDAPCP records all its activity in SharePoint logs, including the performance, queries and number of results returned per LDAP servers.
-They can be returned by filtering on Product/Area "LDAPCP":
+LDAPCP records all its activity in SharePoint logs, including the performance, queries and number of results returned for each LDAP server.
+
+Get LDAPCP logging level:
 
 ```powershell
-Merge-SPLogFile -Path "C:\Temp\LDAPCP_logging.log" -Overwrite -Area "LDAPCP" -StartTime (Get-Date).AddDays(-1)
+Get-SPLogLevel| ?{$_.Area -like "LDAPCP"}
+```
+
+Set LDAPCP logging level:
+
+```powershell
+"LDAPCP:*"| Set-SPLogLevel -TraceSeverity Verbose
+```
+
+Merge LDAPCP logs from all servers from the past 10 minutes:
+
+```powershell
+Merge-SPLogFile -Path "C:\Data\LDAPCP_logging.log" -Overwrite -Area "LDAPCP" -StartTime (Get-Date).AddMinutes(-10)
 ```
 
 ## Replay LDAP queries
 
-If people picker doesn't return expected results, it ca be helpful to replay LDAP queries executed by LDAPCP (which are recorded in the logs) outside of SharePoint:
+If people picker doesn't return expected results, it ca be helpful to replay the LDAP queries executed by LDAPCP (which are recorded in the logs) outside of SharePoint:
 
 ```powershell
 $filter = "(&(objectClass=user)(|(sAMAccountName=yvand*)(cn=yvand*)))"
@@ -48,30 +61,32 @@ foreach ($objResult in $results)    {$objItem = $objResult.Properties; $objItem}
 
 If augmentation is enabled, LDAPCP gets group membership of federated users to populate 2 kind of tokens:
 
-- SharePoint SAML token of users with their group membership when they sign-in
-- Non-interactive SharePoint token: this internal token is used by some features like email alerts, "check permissions", incoming email, etc...
+- SharePoint SAML token of users, when they sign-in
+- Non-interactive SharePoint token: this internal token is unique per user and per site collection and used by some features like email alerts, "check permissions", incoming email, etc...
 
 If augmentation does not work, here is how to troubleshoot it:
 
-### Ensure augmentation is enabled in LDAPCP configuration page
+### Ensure augmentation is enabled in LDAPCP
 
 Go to central administration > Security > LDAPCP global configuration page and validate that:
 
 - Augmentation is enabled.
-- A claim type for the groups is selected
-- The LDAP/AD server is enabled for augmentation
+- A claim type for the groups is selected.
+- Servers are enabled for augmentation.
 
 ### "Check permissions" feature is not working
 
-This usually means that the non-interactive token doesn't contain the group membership. By default, it is valid for 1 day and it is refreshed only if it expired, so the 1st step is to lower its lifetime:
+This usually means that the non-interactive token doesn't contain the group membership. By default, it is valid for 1 day and is refreshed only when it expires, so the 1st step is to lower its lifetime:
 
 ```powershell
 $cs = [Microsoft.SharePoint.Administration.SPWebService]::ContentService
+# Be aware that this setting is farm wide and setting it to 1 minute will break publishing sites, because the superuser/superreader accounts will become immediately invalid.
 $cs.TokenTimeout = New-TimeSpan -Minutes 1
+# Default value: $cs.TokenTimeout = New-TimeSpan -Days 1
 $cs.Update()
 ```
 
-Then, open a new PowerShell console and call SPWeb.DoesUserHavePermissions(), which will trigger a refresh of the non-interactive if it is expired:
+Then, open a new PowerShell console and call SPWeb.DoesUserHavePermissions() to trigger a refresh of the non-interactive token:
 
 ```powershell
 $web = Get-SPWeb "http://spsites/"
