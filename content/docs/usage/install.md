@@ -99,10 +99,10 @@ Execute the following steps on the server running the central administration:
 
 {{< alert icon="💡" text="If you ran `Install-SPSolution` with `-Local`, but not on every SharePoint server running the service \"Microsoft SharePoint Foundation Web Application\", the solution will NOT be \"Globally deployed\" and SharePoint will NOT activate LDAPCP features." >}}
 
-## Finish the installation of LDAPCP bits
+## Finish the installation
 
 Regardless of how `Install-SPSolution` was executed, for all the other SharePoint servers which **do NOT run the service "Microsoft SharePoint Foundation Web Application"**, you must manually add LDAPCP DLLs to their GAC.  
-Complete the steps below on each of those servers to do so:
+For each of those servers:
 
 - Use [7-zip](https://www.7-zip.org/) to extract ldapcp.dll from LDAPCP.wsp
 - Run the script below to add ldapcp.dll to the GAC:

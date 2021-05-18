@@ -31,12 +31,8 @@ Update-SPSolution -GACDeployment -Identity "LDAPCP.wsp" -LiteralPath "F:\Data\De
 
 ## Finish the installation
 
-SharePoint updates the bits only on the servers which run the service "Microsoft SharePoint Foundation Web Application", but LDAPCP must be updated on all SharePoint servers.
-
-
-- [Update assembly manually](Install-LDAPCP.html) on SharePoint servers that do not run the service "Microsoft SharePoint Foundation Web Application"
-- Restart IIS service on each SharePoint server
-- Visit central administration > Security > LDAPCP global configuration page: review the configuration
+`Update-SPSolution` updates the bits only on the servers running the service "Microsoft SharePoint Foundation Web Application", but LDAPCP must be updated on all SharePoint servers.  
+To complete the update, follow the steps described in the section ["Finish the installation" in the installation page]({{< relref "install.md#finish-the-installation" >}}).
 
 ## Breaking changes
 
