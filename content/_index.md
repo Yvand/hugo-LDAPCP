@@ -8,4 +8,4 @@ draft: false
 images: []
 ---
 
-LDAPCP can be easily tested by deploying [this ARM template](https://azure.microsoft.com/en-us/resources/templates/sharepoint-adfs/) in Azure. It creates a full SharePoint farm and configures LDAPCP in a federated scenario between SharePoint on-premises and ADFS.
+LDAPCP can be easily tested by deploying [this ARM template](https://azure.microsoft.com/en-us/resources/templates/sharepoint-adfs/) in Azure: It creates a full SharePoint farm and configures LDAPCP in a federated scenario between SharePoint on-premises and ADFS.
