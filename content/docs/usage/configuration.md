@@ -17,8 +17,8 @@ toc: true
 
 LDAPCP comes with 2 administration pages added in central administration > Security:
 
-- Global configuration: Add/remove LDAP servers and configure general settings
-- Claim types configuration: Define the claim types, and their mapping with LDAP objects
+- Global configuration: Add / remove LDAP servers and configure various settings.
+- Claim types configuration: Define the claim types, and their mapping with LDAP objects.
 
 ## Configure with PowerShell
 

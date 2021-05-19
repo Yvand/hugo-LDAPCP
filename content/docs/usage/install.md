@@ -101,7 +101,7 @@ Execute the following steps on the server running the central administration:
 
 ## Finish the installation
 
-For all the other SharePoint servers which **do NOT run the service "Microsoft SharePoint Foundation Web Application"**, you must manually add ldapcp.dll to their GAC:
+For every other SharePoint server which **does NOT run the service "Microsoft SharePoint Foundation Web Application"**, ldapcp.dll must be added manually to their GAC using these steps:
 
 {{< alert icon="💡" text="This applies regardless of how `Install-SPSolution` or `Update-SPSolution` was executed" >}}
 
@@ -125,11 +125,11 @@ For all the other SharePoint servers which **do NOT run the service "Microsoft S
   Write-Host "Assembly was successfully added to the GAC."
   ```
 
-- Restart the IIS service and the SharePoint timer service (SPTimerV4) on all SharePoint servers.
+- Restart the IIS service and the SharePoint timer service (SPTimerV4).
 
 ## Enable the claims provider
 
-To enable LDAPCP, it must be associated with the SPTrustedLoginProvider which stores the configuration with the trusted STS:
+To be enabled, LDAPCP must be associated with the SPTrustedLoginProvider which stores the configuration with the trusted STS:
 
 ```powershell
 $trust = Get-SPTrustedIdentityTokenIssuer "SPTRUST NAME"
