@@ -13,8 +13,6 @@ weight: 960
 toc: true
 ---
 
-{{< alert icon="💡" text="Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors.<br>Execute all the operations below on the server running the central administration." >}}
-
 This procedure will:
 
 - Clean artifacts that were not correctly removed by SharePoint.
@@ -23,6 +21,8 @@ This procedure will:
 After it is commpleted, LDAPCP can be safely re-installed as if it was done for the 1st time.
 
 ## Remove LDAPCP claims provider
+
+{{< alert icon="💡" text="Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors.<br>Execute all the operations below on the server running the central administration." >}}
 
 This commands removes the SPClaimProvider object from the SharePoint farm:
 
@@ -68,9 +68,7 @@ Get-SPFeature| ?{$_.DisplayName -like 'LDAPCP*'}| Disable-SPFeature -Confirm:$fa
 Get-SPFeature| ?{$_.DisplayName -like 'LDAPCP*'}| Uninstall-SPFeature -Confirm:$false
 ```
 
-4. Once all features are uninstalled, delete the "RootDirectory" folder(s) you created.
-
-{{< alert icon="💡" text="Also delete the \"RootDirectory\" folder on all other SharePoint servers, if it exists." >}}
+4. Once all features are uninstalled, delete the "RootDirectory" folder(s) that was created earlier.
 
 ## Delete the LDAPCP persisted object
 

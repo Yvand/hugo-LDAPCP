@@ -8,7 +8,7 @@
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/h-enk/doks",
+  "repository": "https://github.com/Yvand/hugo-LDAPCP",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

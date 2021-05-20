@@ -129,7 +129,7 @@ For every other SharePoint server which **does NOT run the service "Microsoft Sh
 
 ## Enable the claims provider
 
-To be enabled, LDAPCP must be associated with the SPTrustedLoginProvider which stores the configuration with the trusted STS:
+To be enabled, LDAPCP must be associated with the SPTrustedLoginProvider which stores the configuration of the trust with the trusted STS:
 
 ```powershell
 $trust = Get-SPTrustedIdentityTokenIssuer "SPTRUST NAME"
