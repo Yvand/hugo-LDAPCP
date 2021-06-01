@@ -15,10 +15,12 @@ toc: true
 
 ## Use case
 
-LDAPCP is useful when SharePoint 2019 / 2016 / 2013 is [federated with ADFS](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/implement-saml-based-authentication-in-sharepoint-server) (or any STS that uses an IDP which supports LDAP).  
-It runs inside SharePoint and connects to Active Directory and LDAP servers to return users and groups to SharePoint in various scenarios, such as the people picker.
+LDAPCP is useful when SharePoint 2019 / 2016 / 2013 is [federated with ADFS](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/implement-saml-based-authentication-in-sharepoint-server) (or any STS that uses an IdP which supports LDAP).  
+It runs inside SharePoint and queries Active Directory and LDAP servers to return users and groups to SharePoint in various scenarios, such as the people picker.
 
 ![people-picker-LDAPCP-Yvan](/images/people-picker-LDAPCP-Yvan.png)
+
+It can be easily tested by deploying [this ARM template](https://azure.microsoft.com/en-us/resources/templates/sharepoint-adfs/) in Azure: It creates a full SharePoint farm, configures federation with ADFS and installs LDAPCP.
 
 ## Features
 
