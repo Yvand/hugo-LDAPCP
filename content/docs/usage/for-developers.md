@@ -11,6 +11,8 @@ menu:
     parent: "usage"
 weight: 870
 toc: true
+aliases:
+  - /For-Developers.html
 ---
 
 ## When LDAPCP may need to be customized

@@ -11,6 +11,8 @@ menu:
     parent: "usage"
 weight: 800
 toc: true
+aliases:
+  - /Install-LDAPCP.html
 ---
 
 ## Important

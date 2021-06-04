@@ -11,6 +11,8 @@ menu:
     parent: "help"
 weight: 960
 toc: true
+aliases:
+  - /Fix-setup-issues.html
 ---
 
 This procedure will:

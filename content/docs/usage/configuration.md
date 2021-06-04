@@ -11,6 +11,8 @@ menu:
     parent: "usage"
 weight: 810
 toc: true
+aliases:
+  - /Configure-LDAPCP.html
 ---
 
 ## Configure with administration pages

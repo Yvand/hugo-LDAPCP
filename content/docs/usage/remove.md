@@ -11,6 +11,8 @@ menu:
     parent: "usage"
 weight: 860
 toc: true
+aliases:
+  - /Remove-LDAPCP.html
 ---
 
 {{< alert icon="💡" text="Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors." >}}

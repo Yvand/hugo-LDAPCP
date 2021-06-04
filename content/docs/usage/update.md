@@ -11,6 +11,8 @@ menu:
     parent: "usage"
 weight: 850
 toc: true
+aliases:
+  - /Update-LDAPCP.html
 ---
 
 ## Update the solution
