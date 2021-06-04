@@ -11,6 +11,8 @@ menu:
     parent: "help"
 weight: 950
 toc: true
+aliases:
+  - /Troubleshoot-LDAPCP.html
 ---
 
 ## Check the SharePoint logs
