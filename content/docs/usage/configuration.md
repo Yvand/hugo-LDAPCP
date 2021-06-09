@@ -26,27 +26,55 @@ LDAPCP comes with 2 administration pages added in central administration > Secur
 
 Starting with v10, LDAPCP can be configured with PowerShell:
 
+### Show the current configuration
+
+This returns the overall configuration:
+
 ```powershell
 Add-Type -AssemblyName "ldapcp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=80be731bc1a1a740"
 $config = [ldapcp.LDAPCPConfig]::GetConfiguration("LDAPCPConfig")
-
 # To view current configuration
 $config
 $config.ClaimTypes
+```
 
-# Update some settings, e.g. configure augmentation:
+### Enable augmentation
+
+This script enables the augmentation:
+
+```powershell
+Add-Type -AssemblyName "ldapcp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=80be731bc1a1a740"
+$config = [ldapcp.LDAPCPConfig]::GetConfiguration("LDAPCPConfig")
+# both properties need to be set for augmentation to work
 $config.EnableAugmentation = $true
 $config.MainGroupClaimType = "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+# it also needs to be enabled on at least one connection
+foreach ($connection in $config.LDAPConnectionsProp) {
+  $connection.EnableAugmentation = $true
+}
 $config.Update()
+```
 
-# Reset claim types configuration list to default
-$config.ResetClaimTypesList()
+### Set a LDAP filter
+
+This script excludes groups which start with "Domain", such as "Domain Admins", "Domain Computers", "Domain Controllers", etc...:
+
+```powershell
+Add-Type -AssemblyName "ldapcp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=80be731bc1a1a740"
+$config = [ldapcp.LDAPCPConfig]::GetConfiguration("LDAPCPConfig")
+$config.ClaimTypes | Where-Object EntityType -like "Group" | ForEach-Object {
+    $_.AdditionalLDAPFilter = "(&(objectCategory=group)(!cn=domain*))"
+}
 $config.Update()
+```
 
-# Reset the whole configuration to default
-$config.ResetCurrentConfiguration()
-$config.Update()
+### Add a claim type to LDAPCP
 
+If the SPTrustedLoginProvider has a custom claim type that is missing in LDAPCP, it can be added through PowerShell:
+
+```powershell
+Add-Type -AssemblyName "ldapcp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=80be731bc1a1a740"
+$config = [ldapcp.LDAPCPConfig]::GetConfiguration("LDAPCPConfig")
 # Add a new entry to the claim types configuration list
 $newCTConfig = New-Object ldapcp.ClaimTypeConfig
 $newCTConfig.ClaimType = "ClaimTypeValue"
@@ -55,11 +83,19 @@ $newCTConfig.LDAPClass = "LDAPClassVALUE"
 $newCTConfig.LDAPAttribute = "LDAPAttributeVALUE"
 $config.ClaimTypes.Add($newCTConfig)
 $config.Update()
+```
 
+### Remove a claim type from LDAPCP
+
+```powershell
+Add-Type -AssemblyName "ldapcp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=80be731bc1a1a740"
+$config = [ldapcp.LDAPCPConfig]::GetConfiguration("LDAPCPConfig")
 # Remove a claim type from the claim types configuration list
 $config.ClaimTypes.Remove("ClaimTypeValue")
 $config.Update()
 ```
+
+## Persistence of the configuration
 
 LDAPCP configuration is stored as a persisted object in the SharePoint configuration database, and it can be returned with this SQL command:
 
