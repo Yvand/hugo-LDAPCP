@@ -1,9 +1,9 @@
 ---
-title : "Claims provider for SharePoint 2019 / 2016 / 2013"
+title : "Claims provider for trusted authentication in SharePoint"
 description: ""
-lead: "LDAPCP connects SharePoint with Active Directory and LDAP servers to enhance the people picker with a great search experience in federated authentication."
+lead: "LDAPCP connects SharePoint Subscription / 2019 / 2016 / 2013 with Active Directory and LDAP servers to fill the gaps and improve the experience in federated authentication."
 date: 2021-05-17T19:25:29Z
-lastmod: 2021-05-17T19:25:29Z
+lastmod: 2021-08-04T11:15:29Z
 draft: false
 images: []
 ---

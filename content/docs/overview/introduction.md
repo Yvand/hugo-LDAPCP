@@ -3,7 +3,7 @@ title: "Introduction"
 description: ""
 lead: ""
 date: 2021-05-26T09:09:00Z
-lastmod: 2021-05-26T09:09:00Z
+lastmod: 2021-08-04T11:15:29Z
 draft: false
 images: []
 menu: 
@@ -15,19 +15,24 @@ toc: true
 
 ## Use case
 
-LDAPCP is useful when SharePoint 2019 / 2016 / 2013 is [federated with ADFS](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/implement-saml-based-authentication-in-sharepoint-server) (or any STS that uses an IdP which supports LDAP).  
-It runs inside SharePoint and queries Active Directory and LDAP servers to return users and groups to SharePoint in various scenarios, such as the people picker.
+LDAPCP is useful when SharePoint is federated with ADFS (or a similar STS) using [WS-Federation](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/implement-saml-based-authentication-in-sharepoint-server) or [OpenID Connect](https://docs.microsoft.com/en-us/sharepoint/security-for-sharepoint-server/oidc-1-0-authentication).  
+It runs inside SharePoint and queries your Active Directory and LDAP servers to find users and groups:
 
 ![people-picker-LDAPCP-Yvan](/images/people-picker-LDAPCP-Yvan.png)
 
 It can be easily tested by deploying [this ARM template](https://azure.microsoft.com/en-us/resources/templates/sharepoint-adfs/) in Azure: It creates a full SharePoint farm, configures federation with ADFS and installs LDAPCP.
 
+## Compatibility
+
+LDAPCP is fully compatible with all the supported versions of SharePoint Server: SharePoint Subscription, SharePoint 2019, SharePoint 2016 and SharePoint 2013.
+
 ## Features
 
+- Improve the search in the people picker
 - Query multiple Active Directory and LDAP servers in parallel.
-- Easy to configure through dedicated pages in central administration, or using PowerShell.
-- Return group membership of federated users (augmentation).
-- Populate the metadata (e.g. email, display name) of entities.
+- Get group membership (augmentation).
+- Populate the metadata (e.g. email, display name) of the entities.
+- Easy to configure through PowerShell or administration pages.
 - No dependency on any SharePoint service application.
 
 ## Customization

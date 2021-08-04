@@ -3,8 +3,8 @@
 ## Homepage
 title = "LDAPCP"
 titleSeparator = "-"
-titleAddition = "Claims provider for SharePoint 2019 / 2016 / 2013"
-description = "LDAPCP connects SharePoint with Active Directory and LDAP servers to enhance the people picker with a great search experience in federated authentication"
+titleAddition = "Claims provider for SharePoint Subscription / 2019 / 2016 / 2013"
+description = "LDAPCP connects SharePoint Subscription / 2019 / 2016 / 2013 with Active Directory and LDAP servers to fill the gaps and improve the experience in federated authentication."
 
 ## Open Graph + Twitter Cards
 #images = ["doks.png"]
