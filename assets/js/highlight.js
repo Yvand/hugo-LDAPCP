@@ -11,7 +11,6 @@ import powershell from 'highlight.js/lib/languages/powershell';
 hljs.registerLanguage('javascript', javascript);
 hljs.registerLanguage('json', json);
 hljs.registerLanguage('bash', bash);
-hljs.registerLanguage('html', htmlbars);
 hljs.registerLanguage('ini', ini);
 hljs.registerLanguage('toml', ini);
 hljs.registerLanguage('yaml', yaml);
