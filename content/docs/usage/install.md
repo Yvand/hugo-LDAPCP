@@ -132,7 +132,8 @@ For each of those servers, complete the steps below to manually add/update ldapc
   Write-Host "Assembly was successfully added to the GAC."
   ```
 
-- Restart the IIS service and the SharePoint timer service (SPTimerV4).
+- Restart the IIS service and the SharePoint timer service (SPTimerV4):  
+`Restart-Service W3SVC; Restart-Service SPTimerV4`
 
 ## Enable the claims provider
 
