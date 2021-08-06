@@ -3,7 +3,7 @@ title: "Introduction"
 description: ""
 lead: ""
 date: 2021-05-26T09:09:00Z
-lastmod: 2021-08-04T11:15:29Z
+lastmod: 2021-08-06T11:15:29Z
 draft: false
 images: []
 menu: 
@@ -28,9 +28,9 @@ LDAPCP is fully compatible with all the supported versions of SharePoint Server:
 
 ## Features
 
-- Improve the search in the people picker
-- Query multiple Active Directory and LDAP servers in parallel.
+- Fix the search in the people picker.
 - Get group membership (augmentation).
+- Query multiple Active Directory and LDAP servers in parallel.
 - Populate the metadata (e.g. email, display name) of the entities.
 - Easy to configure through PowerShell or administration pages.
 - No dependency on any SharePoint service application.
