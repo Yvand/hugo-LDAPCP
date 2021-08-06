@@ -107,9 +107,8 @@ Execute the following steps:
 
 ## Finalize the installation
 
-{{< alert icon="💡" text="This applies to both install (`Install-SPSolution`) and update (`Update-SPSolution`) scenarios." />}}
-
 This step is **very important** and applies to **all** SharePoint servers which do **NOT run the service "Microsoft SharePoint Foundation Web Application" and/or the central administration**.  
+{{< alert icon="💡" text="This step must be executed during both install (`Install-SPSolution`) and update (`Update-SPSolution`) scenarios." />}}
 For each of those servers, complete the steps below to manually add/update ldapcp.dll in the GAC:
 
 - Use [7-zip](https://www.7-zip.org/) to extract ldapcp.dll from LDAPCP.wsp
