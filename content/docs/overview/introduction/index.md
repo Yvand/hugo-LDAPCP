@@ -18,7 +18,7 @@ toc: true
 LDAPCP is useful when SharePoint is federated with ADFS (or a similar STS) using [WS-Federation](https://docs.microsoft.com/sharepoint/security-for-sharepoint-server/implement-saml-based-authentication-in-sharepoint-server) or [OpenID Connect](https://docs.microsoft.com/en-us/sharepoint/security-for-sharepoint-server/oidc-1-0-authentication).  
 It runs inside SharePoint and queries your Active Directory and LDAP servers to find users and groups:
 
-![people-picker-LDAPCP-Yvan](/images/people-picker-LDAPCP-Yvan.png)
+![Image](people-picker-LDAPCP-Yvan.png "")
 
 It can be easily tested by deploying [this ARM template](https://azure.microsoft.com/en-us/resources/templates/sharepoint-adfs/) in Azure: It creates a full SharePoint farm, configures federation with ADFS and installs LDAPCP.
 
