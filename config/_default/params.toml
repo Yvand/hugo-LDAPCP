@@ -1,13 +1,18 @@
+# Project data
+projectName = "LDAPCP"
+mainAssetName = "LDAPCPSE.wsp"
+latestReleaseUrl = "https://github.com/Yvand/LDAPCP/releases/latest"
+latestAssetUrl = "https://github.com/Yvand/LDAPCP/releases/download/v16.0.20230824.1/LDAPCP.wsp"
+latestAssetVersion = "v16.0"
+projectUrl = "https://github.com/Yvand/LDAPCP/"
+
 # Hugo
-title = "My Docs"
-description = "Congrats on setting up a new Doks project!"
+title = "LDAPCP for SharePoint Server"
+description = "LDAPCP is a claims provider that connects SharePoint to Active Directory and LDAP, in federated authentication."
 images = ["cover.png"]
 
 # mainSections
-mainSections = ["docs"]
-
-[social]
-  twitter = "getdoks"
+mainSections = ["docs", "classic"]
 
 # Doks (@hyas/doks-core)
 [doks]
@@ -17,12 +22,11 @@ mainSections = ["docs"]
 
   # Navbar
   navbarSticky = true # true (default) or false
-  containerBreakpoint = "lg" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
+  containerBreakpoint = "fluid" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
 
   ## Button
   navBarButton = false # false (default) or true
   navBarButtonUrl = "/docs/prologue/introduction/"
-  navBarButtonText = "Get started"
 
   # FlexSearch
   flexSearch = true # true (default) or false
@@ -37,14 +41,14 @@ mainSections = ["docs"]
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = false # false (default) or true
+  alert = true # false (default) or true
   alertDismissable = true # true (default) or false
 
   # Bootstrap
   bootstrapJavascript = false # false (default) or true
 
   # Nav
-  sectionNav = ["docs"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  sectionNav = ["docs", "docs-classic"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
   toTopButton = false # false (default) or true
   breadcrumbTrail = false # false (default) or true
   headlineHash = true # true (default) or false
@@ -71,10 +75,10 @@ mainSections = ["docs"]
   imageSingle = true # true (default) or false
 
   # Repository
-  editPage = false # false (default) or true
-  lastMod = false # false (default) or true
+  editPage = true # false (default) or true
+  lastMod = true # false (default) or true
   repoHost = "GitHub" # GitHub (default), Gitea, GitLab, Bitbucket, or BitbucketServer
-  docsRepo = "https://github.com/h-enk/doks"
+  docsRepo = "https://github.com/Yvand/hugo-LDAPCP"
   docsRepoBranch = "main" # main (default), master, or <branch name>
   docsRepoSubPath = "" # "" (none, default) or <sub path>
 
@@ -89,8 +93,8 @@ mainSections = ["docs"]
 
   [doks.menu]
     [doks.menu.section]
-      auto = true # true (default) or false
-      collapsibleSidebar = true # true (default) or false
+      auto = false # true (default) or false
+      collapsibleSidebar = false # true (default) or false
 
 # Debug
 [render_hooks.image]
@@ -129,10 +133,10 @@ mainSections = ["docs"]
   [seo.schemas]
     type = "Organization" # Organization (default) or Person
     logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
-    name = "Hyas" # Name of Organization or Person
-    sameAs = [] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
+    name = "LDAPCP" # Name of Organization or Person
+    sameAs = ["https://github.com/Yvand/LDAPCP"] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
     images = ["cover.png"] # ["cover.png"] (default)
     article = [] # Article sections
     newsArticle = [] # NewsArticle sections
-    blogPosting = ["blog"] # BlogPosting sections
+    blogPosting = [] #["blog"] # BlogPosting sections
     product = [] # Product sections
