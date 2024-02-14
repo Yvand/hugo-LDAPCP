@@ -9,6 +9,7 @@ images: []
 menu: 
   docs-classic:
     parent: "classic-overview"
+    identifier: "classic-limitations"
 weight: 150
 toc: true
 ---

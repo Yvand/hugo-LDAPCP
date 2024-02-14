@@ -9,9 +9,12 @@ images: []
 menu: 
   docs-classic:
     parent: "classic-overview"
+    identifier: "classic-introduction"
 weight: 100
 toc: true
 ---
+
+{{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated, and migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
 
 ## Use case
 

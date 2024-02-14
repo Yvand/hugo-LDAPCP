@@ -9,6 +9,7 @@ images: []
 menu: 
   docs-classic:
     parent: "classic-help"
+    identifier: "classic-fix-setup-issues"
 weight: 960
 toc: true
 ---

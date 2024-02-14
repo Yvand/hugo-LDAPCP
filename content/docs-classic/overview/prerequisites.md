@@ -9,6 +9,7 @@ images: []
 menu: 
   docs-classic:
     parent: "classic-overview"
+    identifier: "classic-prerequisites"
 weight: 120
 toc: true
 ---

@@ -1,15 +1,16 @@
 ---
-title: "Docs"
+title: "LDAPCP Second Edition"
 description: ""
 summary: ""
-date: 2023-09-07T16:12:03+02:00
-lastmod: 2023-09-07T16:12:03+02:00
+date: 2024-02-14
+lastmod: 2024-02-14
 draft: false
+images: []
 menu:
   docs-se:
     parent: ""
-    identifier: "docs-9602b15bad02600f3883f55e2ade6b81"
-weight: 999
+    identifier: "docs-se-root"
+weight: 1
 toc: true
 seo:
   title: "" # custom title (optional)
@@ -17,4 +18,3 @@ seo:
   canonical: "" # custom canonical URL (optional)
   noindex: false # false (default) or true
 ---
-root

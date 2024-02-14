@@ -13,7 +13,7 @@
 [[main]]
   name = "LDAPCP Second Edition"
   weight = 10
-  url = "/docs-se/"
+  url = "/docs-se/overview/introduction"
   parent = "documentation"
 
 [[main]]
@@ -41,10 +41,22 @@
 
 # Menu for LDAPCP SE
 [[docs-se]]
-  name = "Usage"
+  name = "Overview"
   weight = 10
+  identifier = "se-overview"
+  url = "/docs-se/overview/"
+
+[[docs-se]]
+  name = "Usage"
+  weight = 20
   identifier = "se-usage"
   url = "/docs-se/usage/"
+
+[[docs-se]]
+  name = "Guides"
+  weight = 25
+  identifier = "se-guides"
+  url = "/docs-se/guides/"
 
 [[docs-se]]
   name = "Help"

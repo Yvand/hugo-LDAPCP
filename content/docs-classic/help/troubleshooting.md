@@ -9,6 +9,7 @@ images: []
 menu: 
   docs-classic:
     parent: "classic-help"
+    identifier: "classic-troubleshooting"
 weight: 950
 toc: true
 aliases:

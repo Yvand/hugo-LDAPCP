@@ -9,6 +9,7 @@ images: []
 menu: 
   docs-classic:
     parent: "classic-usage"
+    identifier: "classic-configure"
 weight: 810
 toc: true
 aliases:

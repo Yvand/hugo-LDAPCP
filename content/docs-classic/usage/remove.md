@@ -9,6 +9,7 @@ images: []
 menu: 
   docs-classic:
     parent: "classic-usage"
+    identifier: "classic-remove"
 weight: 860
 toc: true
 aliases:

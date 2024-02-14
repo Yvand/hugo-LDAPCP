@@ -1,4 +1,7 @@
 ---
+aliases:
+- /docs/usage/install/
+- install2/
 title: "Install"
 description: "Install LDAPCP"
 lead: "Install LDAPCP in your SharePoint farm"
@@ -9,10 +12,9 @@ images: []
 menu: 
   docs-classic:
     parent: "classic-usage"
+    identifier: "classic-install"
 weight: 800
 toc: true
-aliases:
-  - /Install-LDAPCP.html
 ---
 
 ## Important
