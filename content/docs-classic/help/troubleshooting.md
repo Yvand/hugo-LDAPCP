@@ -7,8 +7,8 @@ lastmod: 2021-05-17T13:24:28Z
 draft: false
 images: []
 menu: 
-  docs:
-    parent: "help"
+  docs-classic:
+    parent: "classic-help"
 weight: 950
 toc: true
 aliases:

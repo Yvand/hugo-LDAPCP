@@ -2,6 +2,7 @@
   name = "Overview"
   url = "/overview/introduction"
   weight = 10
+  identifier = "overview"
 
 [[main]]
   name = "Documentation"
@@ -12,13 +13,13 @@
 [[main]]
   name = "LDAPCP Second Edition"
   weight = 10
-  url = "/docs/overview/"
+  url = "/docs-se/"
   parent = "documentation"
 
 [[main]]
   name = "LDAPCP Classic (deprecated)"
   weight = 20
-  url = "/docs-classic/overview/"
+  url = "/docs-classic/overview/introduction"
   parent = "documentation"
 
 [[social]]
@@ -39,33 +40,33 @@
   weight = 10
 
 # Menu for LDAPCP SE
-[[docs]]
+[[docs-se]]
   name = "Usage"
   weight = 10
-  identifier = "usage"
-  url = "/docs/usage/"
+  identifier = "se-usage"
+  url = "/docs-se/usage/"
 
-[[docs]]
-  name = "How-to Guides"
-  weight = 20
-  identifier = "how-to"
-  url = "/docs/how-to/"
-
-[[docs]]
+[[docs-se]]
   name = "Help"
   weight = 30
-  identifier = "help"
-  url = "/docs/help/"
+  identifier = "se-help"
+  url = "/docs-se/help/"
 
 # Menu for LDAPCP Classic
 [[docs-classic]]
-  name = "Usage"
+  name = "Overview"
   weight = 10
-  identifier = "usage"
+  identifier = "classic-overview"
+  url = "/docs-classic/overview/"
+
+[[docs-classic]]
+  name = "Usage"
+  weight = 20
+  identifier = "classic-usage"
   url = "/docs-classic/usage/"
 
 [[docs-classic]]
   name = "Help"
-  weight = 20
-  identifier = "help"
+  weight = 30
+  identifier = "classic-help"
   url = "/docs-classic/help/"

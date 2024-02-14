@@ -1,9 +1,15 @@
 ---
-title : "LDAPCP documentation"
-description: "Documentation for LDAPCP."
-lead: ""
-date: 2020-10-06T08:48:23+00:00
-lastmod: 2020-10-06T08:48:23+00:00
+title: "LDAPCP Classic (deprecated)"
+description: ""
+summary: ""
+date: 2024-02-14
+lastmod: 2024-02-14
 draft: false
 images: []
+menu:
+  docs-classic:
+    parent: ""
+    identifier: "docs-classic-root"
+weight: 1
+toc: true
 ---

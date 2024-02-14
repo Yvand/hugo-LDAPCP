@@ -7,8 +7,8 @@ lastmod: 2021-05-17T14:06:29Z
 draft: false
 images: []
 menu: 
-  docs:
-    parent: "usage"
+  docs-classic:
+    parent: "classic-usage"
 weight: 810
 toc: true
 aliases:

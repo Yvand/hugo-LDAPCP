@@ -7,8 +7,8 @@ lastmod: 2021-06-01T11:51:04Z
 draft: false
 images: []
 menu: 
-  docs:
-    parent: "overview"
+  docs-classic:
+    parent: "classic-overview"
 weight: 150
 toc: true
 ---

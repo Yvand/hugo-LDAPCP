@@ -1,5 +1,5 @@
 ---
-title: "Install"
+title: "Install SE"
 description: "Install LDAPCP"
 lead: "Install LDAPCP in your SharePoint farm"
 date: 2021-05-17T13:21:55Z
@@ -7,12 +7,10 @@ lastmod: 2021-08-06T11:15:29Z
 draft: false
 images: []
 menu: 
-  docs:
-    parent: "usage"
+  docs-se:
+    parent: "se-usage"
 weight: 800
 toc: true
-aliases:
-  - /Install-LDAPCP.html
 ---
 
 ## Important
@@ -144,4 +142,4 @@ $trust.ClaimProviderName = "LDAPCP"
 $trust.Update()
 ```
 
-You can now [configure LDAPCP]({{< ref "configuration" >}}).
+You can now [configure LDAPCP]( ref "configuration" ).

@@ -4,11 +4,11 @@ description: "Prerequisites"
 lead: ""
 date: 2021-06-24T09:04:51Z
 lastmod: 2021-08-04T11:15:29Z
-draft: true
+draft: false
 images: []
 menu: 
-  docs:
-    parent: "overview"
+  docs-classic:
+    parent: "classic-overview"
 weight: 120
 toc: true
 ---

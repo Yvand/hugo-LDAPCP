@@ -7,12 +7,10 @@ lastmod: 2021-05-17T13:24:40Z
 draft: false
 images: []
 menu: 
-  docs:
-    parent: "help"
+  docs-classic:
+    parent: "classic-help"
 weight: 960
 toc: true
-aliases:
-  - /Fix-setup-issues.html
 ---
 
 This procedure will:
@@ -87,4 +85,4 @@ Remove-SPSolution "LDAPCP.wsp" -Confirm:$false
 ```
 
 Close PowerShell.  
-LDAPCP is now properly and completely uninstalled. If desired, you may [re-install it]({{< relref "install" >}}).
+
