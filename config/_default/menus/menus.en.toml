@@ -54,13 +54,13 @@
 
 [[docs-se]]
   name = "Guides"
-  weight = 25
+  weight = 30
   identifier = "se-guides"
   url = "/docs-se/guides/"
 
 [[docs-se]]
   name = "Help"
-  weight = 30
+  weight = 40
   identifier = "se-help"
   url = "/docs-se/help/"
 

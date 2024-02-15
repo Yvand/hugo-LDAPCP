@@ -17,6 +17,8 @@ weight: 800
 toc: true
 ---
 
+{{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated. Migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
+
 ## Important
 
 SharePoint (especially 2019) has unaddressed reliability issues when deploying farm solutions on farms with multiple servers.  

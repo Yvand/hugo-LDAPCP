@@ -14,6 +14,8 @@ weight: 150
 toc: true
 ---
 
+{{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated. Migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
+
 ## When LDAPCP cannot be used
 
 - SharePoint servers have no network access to the AD/LDAP server which contains the users.

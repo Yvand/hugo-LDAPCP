@@ -16,6 +16,8 @@ aliases:
   - /Update-LDAPCP.html
 ---
 
+{{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated. Migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
+
 ## Update the solution
 
 {{< callout context="caution" title="Important" icon="alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors.<br>Bear in mind that additional steps are required on SharePoint servers which do not run the service 'Microsoft SharePoint Foundation Web Application'. {{< /callout >}}

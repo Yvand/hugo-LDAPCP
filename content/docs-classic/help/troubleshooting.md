@@ -16,6 +16,8 @@ aliases:
   - /Troubleshoot-LDAPCP.html
 ---
 
+{{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated. Migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
+
 ## Check the SharePoint logs
 
 LDAPCP records all its activity in SharePoint logs, including the performance, queries and number of results returned for each LDAP server.

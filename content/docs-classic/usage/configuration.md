@@ -16,6 +16,8 @@ aliases:
   - /Configure-LDAPCP.html
 ---
 
+{{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated. Migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
+
 ## Configure with administration pages
 
 LDAPCP comes with 2 administration pages added in central administration > Security:

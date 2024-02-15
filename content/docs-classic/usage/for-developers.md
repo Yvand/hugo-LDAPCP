@@ -16,6 +16,8 @@ aliases:
   - /For-Developers.html
 ---
 
+{{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated. Migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
+
 ## When LDAPCP may need to be customized
 
 Project has evolved a lot since it started, and now most of the customizations can be made out of the box.  

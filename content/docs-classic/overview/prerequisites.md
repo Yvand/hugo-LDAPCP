@@ -14,6 +14,8 @@ weight: 120
 toc: true
 ---
 
+{{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated. Migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
+
 LDAPCP has the following requirements:
 
 - A SharePoint 2013 farm or newer.
