@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "sourceMap": false,
+        "outDir": "../static/js",
+        "skipLibCheck": true
+    },
+    "compileOnSave": true,
+    "files": [
+        "gitHubStatistics.ts"
+    ]
+}

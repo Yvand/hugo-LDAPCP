@@ -1,12 +1,14 @@
 {{ define "main" }}
 <section class="section container-fluid mt-n3 pb-3">
   <div class="row justify-content-center">
-    <div class="col-lg-12 text-center">
+    <div class="col-lg-13 text-center">
       <h1>{{ .Title }}</h1>
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>
+      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="{{ "/docs-se/overview/introduction/" }}" role="button">{{ site.Language.Params.navBarButtonText }}</a>
+      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="{{ site.Params.latestReleaseUrl }}" role="button">Download {{ site.Params.projectName }}</a>
+      <p class="meta">Open-source <a href="{{site.Params.projectUrl}}blob/master/LICENSE" target="_blank" rel="noopener">Apache-2.0 License</a>. {{ site.Params.projectName }} <a href="{{ "/blog/new-release-v23.0/" }}">{{ site.Params.latestAssetVersion }}</a></p>
       {{ .Content }}
     </div>
   </div>
@@ -24,20 +26,28 @@
     <div class="container">
       <div class="row justify-content-center text-center">
         <div class="col-lg-5">
-          <h2 class="h4">Update content</h2>
-          <p>Edit <code>content/_index.md</code> to see this page change.</p>
+          <h2 class="h4">Open</h2>
+          <p>
+            LDAPCP is completely free and <a href="https://github.com/Yvand/LDAPCP" target="_blank">open source</a>.<br>
+            It collects <a href="{{ "privacy-policy/" | relURL }}">no data or telemetry</a>.<br>
+            Total downloads: <span id="TotalDownloadCount">-</span><br>
+            Downloads of latest version: <span id="LatestReleaseDownloadCount">-</span>
+          </p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">Add new content</h2>
-          <p>Add Markdown files to <code>content</code> to create new pages.</p>
+          <h2 class="h4">Top features</h2>
+          <p class="text-left">
+            Fixes the search in the people picker.<br>
+            Gets group membership (augmentation).<br>
+            Connects to multiple AD/LDAP directories.<br>
+            Compatible with all the supported versions of SharePoint Server.
+          </p>
         </div>
         <div class="col-lg-5">
-          <h2 class="h4">Configure your site</h2>
-          <p>Edit your config in <code>config/_default/hyas/doks.toml</code>.</p>
-        </div>
-        <div class="col-lg-5">
-          <h2 class="h4">Read the docs</h2>
-          <p>Learn more in the <a href="https://getdoks.org/">Docs</a>.</p>
+          <h2 class="h4">Highly customizable</h2>
+          <p>
+            Administrators can configure and customize many things, through PowerShell or administration pages.
+          </p>
         </div>
       </div>
     </div>
@@ -51,7 +61,7 @@
   <div class="row justify-content-center text-center">
     <div class="col-lg-7">
       <h2 class="mt-2">Start building with Doks today</h2>
-      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get-started" }}</a>
+      <a class="btn btn-primary rounded-pill px-4 my-2" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}prologue/introduction/" role="button">{{ i18n "get_started" }}</a>
     </div>
   </div>
 </section>

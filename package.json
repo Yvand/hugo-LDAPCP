@@ -13,6 +13,7 @@
     "lint:styles": "stylelint --cache \"assets/scss/**/*.{css,sass,scss}\"",
     "lint:markdown": "markdownlint-cli2 \"*.md\" \"content/**/*.md\"",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "tsc -p ./ts_src",
     "build": "exec-bin node_modules/.bin/hugo/hugo --minify --logLevel info",
     "preview": "http-server --gzip --brotli --ext=html --cors",
     "clean": "npm run clean:build && npm run clean:lint && npm run clean:install",
@@ -35,7 +36,9 @@
     "hugo-installer": "^4.0.1"
   },
   "devDependencies": {
-    "shx": "^0.3.4"
+    "@types/jquery": "^3.5.29",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
   },
   "otherDependencies": {
     "hugo": "0.121.1"
