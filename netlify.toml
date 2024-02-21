@@ -44,7 +44,7 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' https://code.jquery.com https://azfunc-repository-stats.azurewebsites.net;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://code.jquery.com https://repository-statistics.azurewebsites.net;"
     cache-control = "max-age=0, must-revalidate, public"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
