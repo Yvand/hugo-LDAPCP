@@ -1,8 +1,8 @@
 {
   "name": "hugo-ldapcp",
-  "version": "0.0.0",
-  "description": "Doks theme",
-  "author": "Hyas",
+  "version": "2.0.0.0",
+  "description": "Hugo site for LDAPCP project",
+  "author": "Yvand",
   "license": "MIT",
   "scripts": {
     "dev": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender --baseURL=http://localhost --noHTTPCache",

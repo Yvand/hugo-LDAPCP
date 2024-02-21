@@ -20,7 +20,9 @@ seo:
 
 ## Overview
 
-`LDAPCP Classic` and `LDAPCP Second Edition` are 2 independent SharePoint solutions / claims providers, and it is perfectly safe to run both on the same SharePoint farm: Installing/updating/removing one has no effect on the other.  
+`LDAPCP Classic` and `LDAPCP Second Edition` are 2 independent SharePoint solutions / claims providers. It is perfectly safe to run both on the same SharePoint farm: Installing/updating/removing one has no effect on the other.  
+
+{{< callout note >}} [See the announcement](https://github.com/Yvand/LDAPCP/discussions/201) to know more about the reasons for this new claims provider. {{< /callout >}}
 
 {{< callout context="caution" title="Important" icon="alert-triangle" >}} `LDAPCP SE` and `LDAPCP Classic` each have their own configuration, and `LDAPCP SE` cannot import the configuration from `LDAPCP Classic`. {{< /callout >}}
 
