@@ -15,13 +15,16 @@ namespace GitHubStatistics {
     }
 
     export class RepoStats {
-        url: string = "https://azfunc-repository-stats.azurewebsites.net/api/GetLatestDocument";
+        url: string = "https://repository-statistics.azurewebsites.net/api/GetData";
         getLatestStat() {
-            //console.log("Sending query to " + this.url);            
+            // console.log("Sending query to " + this.url);
             $.ajax({
                 method: "GET",
                 crossDomain: true,
-                data: {project: "Yvand/LDAPCP"},
+                data: {
+                    project: "Yvand/LDAPCP",
+                    code: "IHZenT9YrvWCXI2YOg5HBGAXHjlAQjozAL2SFR-E53lTAzFuVYTLjw==",
+                },
                 dataType: "jsonp",
                 // mimeType: "application/javascript",
                 jsonpCallback: "GitHubStatistics.RepoStats.parseGitHubStatisticsResponse",

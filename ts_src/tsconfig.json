@@ -1,14 +1,11 @@
 {
     "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
         "sourceMap": false,
-        "typeRoots" : ["../node_modules/@types/"],
-        "outDir": "../static/js"
+        "outDir": "../static/js",
+        "skipLibCheck": true
     },
     "compileOnSave": true,
-    "include": [
-        "*.ts",
-        "*.map"
+    "files": [
+        "gitHubStatistics.ts"
     ]
 }
