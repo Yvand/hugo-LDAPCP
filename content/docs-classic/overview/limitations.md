@@ -6,11 +6,7 @@ date: 2021-06-01T11:51:04Z
 lastmod: 2021-06-01T11:51:04Z
 draft: false
 images: []
-menu: 
-  docs-classic:
-    parent: "classic-overview"
-    identifier: "classic-limitations"
-weight: 150
+weight: 110
 toc: true
 ---
 

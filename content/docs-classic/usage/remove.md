@@ -6,11 +6,7 @@ date: 2021-05-17T10:38:16Z
 lastmod: 2021-05-17T10:38:16Z
 draft: false
 images: []
-menu: 
-  docs-classic:
-    parent: "classic-usage"
-    identifier: "classic-remove"
-weight: 860
+weight: 230
 toc: true
 aliases:
   - /Remove-LDAPCP.html

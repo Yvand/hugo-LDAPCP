@@ -9,11 +9,7 @@ date: 2021-05-17T13:21:55Z
 lastmod: 2021-08-06T11:15:29Z
 draft: false
 images: []
-menu: 
-  docs-classic:
-    parent: "classic-usage"
-    identifier: "classic-install"
-weight: 800
+weight: 200
 toc: true
 ---
 

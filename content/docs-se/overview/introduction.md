@@ -6,10 +6,6 @@ date: 2021-05-26T09:09:00Z
 lastmod: 2021-08-06T11:15:29Z
 draft: false
 images: []
-menu: 
-  docs-se:
-    parent: "se-overview"
-    identifier: "introduction"
 weight: 100
 toc: true
 seo:
