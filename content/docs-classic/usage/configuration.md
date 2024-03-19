@@ -6,11 +6,7 @@ date: 2021-05-17T14:06:29Z
 lastmod: 2021-05-17T14:06:29Z
 draft: false
 images: []
-menu: 
-  docs-classic:
-    parent: "classic-usage"
-    identifier: "classic-configure"
-weight: 810
+weight: 210
 toc: true
 aliases:
   - /Configure-LDAPCP.html

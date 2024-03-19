@@ -6,11 +6,7 @@ date: 2021-05-17T20:17:20Z
 lastmod: 2021-05-17T20:17:20Z
 draft: false
 images: []
-menu: 
-  docs-classic:
-    parent: "classic-usage"
-    identifier: "classic-for-developers"
-weight: 870
+weight: 240
 toc: true
 aliases:
   - /For-Developers.html
