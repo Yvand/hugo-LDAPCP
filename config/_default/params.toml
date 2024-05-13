@@ -2,8 +2,9 @@
 projectName = "LDAPCP"
 mainAssetName = "LDAPCPSE.wsp"
 latestReleaseUrl = "https://github.com/Yvand/LDAPCP/releases/latest"
-latestAssetUrl = "https://github.com/Yvand/LDAPCP/releases/download/v17.0.20240226.2/LDAPCPSE.wsp"
-latestAssetVersion = "v17.0"
+latestAssetUrl = "https://github.com/Yvand/LDAPCP/releases/download/v18.0.20240513.3/LDAPCPSE.wsp"
+latestAssetVersion = "v18.0"
+latestAssetVersionAnnouncementUrl = "https://github.com/Yvand/LDAPCP/discussions/214"
 projectUrl = "https://github.com/Yvand/LDAPCP/"
 
 # Hugo
