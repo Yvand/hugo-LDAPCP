@@ -5,7 +5,7 @@ var GitHubStatistics;
 (function (GitHubStatistics) {
     var RepoStats = /** @class */ (function () {
         function RepoStats() {
-            this.url = "https://repository-statistics.azurewebsites.net/api/GetData";
+            this.url = "https://projects-statistics.azurewebsites.net/api/GetData";
         }
         RepoStats.prototype.getLatestStat = function () {
             // console.log("Sending query to " + this.url);
@@ -14,7 +14,7 @@ var GitHubStatistics;
                 crossDomain: true,
                 data: {
                     project: "Yvand/LDAPCP",
-                    code: "IHZenT9YrvWCXI2YOg5HBGAXHjlAQjozAL2SFR-E53lTAzFuVYTLjw==",
+                    code: "rdntOEXEunid9kXB5EsDriCdg6ikZq37iHS34oMNG8ycAzFuZ5Lqew==",
                 },
                 dataType: "jsonp",
                 // mimeType: "application/javascript",

@@ -15,7 +15,7 @@ namespace GitHubStatistics {
     }
 
     export class RepoStats {
-        url: string = "https://repository-statistics.azurewebsites.net/api/GetData";
+        url: string = "https://projects-statistics.azurewebsites.net/api/GetData";
         getLatestStat() {
             // console.log("Sending query to " + this.url);
             $.ajax({
@@ -23,7 +23,7 @@ namespace GitHubStatistics {
                 crossDomain: true,
                 data: {
                     project: "Yvand/LDAPCP",
-                    code: "IHZenT9YrvWCXI2YOg5HBGAXHjlAQjozAL2SFR-E53lTAzFuVYTLjw==",
+                    code: "rdntOEXEunid9kXB5EsDriCdg6ikZq37iHS34oMNG8ycAzFuZ5Lqew==",
                 },
                 dataType: "jsonp",
                 // mimeType: "application/javascript",
