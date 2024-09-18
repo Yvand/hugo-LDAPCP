@@ -2,7 +2,8 @@
     "compilerOptions": {
         "sourceMap": false,
         "outDir": "../static/js",
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "lib": ["ES2015", "DOM"]
     },
     "compileOnSave": true,
     "files": [
