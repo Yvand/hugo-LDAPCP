@@ -15,6 +15,6 @@ homepage: false
 ## Overview
 
 Link to this releasae: [Click here](https://github.com/Yvand/LDAPCP/releases/tag/v20.0.20241105.5).  
-Changelog in this version: [Click here](https://github.com/Yvand/LDAPCP/blob/master/CHANGELOG.md).  
+Changelog in this version: [Click here](https://github.com/Yvand/LDAPCP/blob/master/CHANGELOG.md#ldapcp-second-edition-v200---published-in-november-5-2024).  
 To update from a previous version of LDAPCP SE: [Follow this article]({{< relref "/docs-se/usage/update" >}}).  
 To upgrade from LDAPCP Classic: [See this article]({{< relref "/docs-se/guides/upgrade-from-classic" >}}).
