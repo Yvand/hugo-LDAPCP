@@ -2,11 +2,11 @@
 projectName = "LDAPCP"
 mainAssetName = "LDAPCPSE.wsp"
 latestReleaseUrl = "https://github.com/Yvand/LDAPCP/releases/latest"
-latestAssetUrl = "https://github.com/Yvand/LDAPCP/releases/download/v20.0.20241105.5/LDAPCPSE.wsp"
-latestAssetVersion = "v20.0"
-latestAssetVersionAnnouncementUrl = "https://github.com/Yvand/LDAPCP/discussions/214"
+latestAssetUrl = "https://github.com/Yvand/LDAPCP/releases/download/v21.0.20250218.6/LDAPCPSE.wsp"
+latestAssetVersion = "v21.0"
+#latestAssetVersionAnnouncementUrl = "https://github.com/Yvand/LDAPCP/discussions/214"
 projectUrl = "https://github.com/Yvand/LDAPCP/"
-LinkTolatestVersionReleaseNotes = "/blog/ldapcpse-v20.0/"
+LinkTolatestVersionReleaseNotes = "/blog/ldapcpse-v21.0/"
 
 # Hugo
 title = "LDAPCP for SharePoint Server"
