@@ -14,7 +14,7 @@ aliases:
 
 {{< callout context="caution" title="Important" >}} LDAPCP Classic is deprecated. Migrating to LDAPCP SE is [safe and easy]({{< relref "/docs-se/guides/upgrade-from-classic" >}}). {{< /callout >}}
 
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors. {{< /callout >}}
 
 ## Reset property ClaimProviderName in the SPTrustedIdentityTokenIssuer
 

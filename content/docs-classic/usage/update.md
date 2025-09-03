@@ -16,7 +16,7 @@ aliases:
 
 ## Update the solution
 
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors.<br>Bear in mind that additional steps are required on SharePoint servers which do not run the service 'Microsoft SharePoint Foundation Web Application'. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors.<br>Bear in mind that additional steps are required on SharePoint servers which do not run the service 'Microsoft SharePoint Foundation Web Application'. {{< /callout >}}
 
 On the server running the central administration:
 
@@ -28,7 +28,7 @@ On the server running the central administration:
   ```
 
 2. Visit central administration > System Settings > Manage farm solutions: Wait until solution status shows "Deployed".
-  {{< callout context="caution" title="Important" icon="alert-triangle" >}} Be patient, cmdlet Update-SPSolution triggers a one-time timer job on the SharePoint servers and this may take a minute or 2. {{< /callout >}}
+  {{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Be patient, cmdlet Update-SPSolution triggers a one-time timer job on the SharePoint servers and this may take a minute or 2. {{< /callout >}}
   > If status shows "Error", restart the SharePoint timer service on servers where depployment failed, start a new PowerShell process and run Update-SPSolution again.
 
 ## Finalize the update

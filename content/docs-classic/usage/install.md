@@ -23,7 +23,7 @@ This page will guide you through the steps to install LDAPCP in a safe and relia
 
 ## Deploy the solution
 
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors. {{< /callout >}}
 
 Execute the following steps:
 
@@ -41,7 +41,7 @@ Execute the following steps:
   
   - __Safe__ method: Recommended for production environments with multiple servers:
   
-  {{< callout context="caution" title="Important" icon="alert-triangle" >}} Run this script on ALL SharePoint servers running the service \"Microsoft SharePoint Foundation Web Application\" and/or the central administration, sequentially (not in parallel), starting with the server running the central administration. {{< /callout >}}
+  {{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Run this script on ALL SharePoint servers running the service \"Microsoft SharePoint Foundation Web Application\" and/or the central administration, sequentially (not in parallel), starting with the server running the central administration. {{< /callout >}}
 
   ```powershell
   <#
@@ -103,12 +103,12 @@ Execute the following steps:
 
 - Visit central administration > System Settings > Manage farm solutions: Confirm the solution is "Globally deployed".
 
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} If you did not run `Install-SPSolution -Local` on every SharePoint server running the service \"Microsoft SharePoint Foundation Web Application\" and/or the central administration, the solution will NOT be \"Globally deployed\" and SharePoint will NOT activate AzureCP features. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} If you did not run `Install-SPSolution -Local` on every SharePoint server running the service \"Microsoft SharePoint Foundation Web Application\" and/or the central administration, the solution will NOT be \"Globally deployed\" and SharePoint will NOT activate AzureCP features. {{< /callout >}}
 
 ## Finalize the installation
 
 This step is **very important** and applies to **all** SharePoint servers which do **NOT run the service "Microsoft SharePoint Foundation Web Application" and/or the central administration**.  
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} This step must be executed during both install (`Install-SPSolution`) and update (`Update-SPSolution`) scenarios. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} This step must be executed during both install (`Install-SPSolution`) and update (`Update-SPSolution`) scenarios. {{< /callout >}}
 For each of those servers, complete the steps below to manually add/update ldapcp.dll in the GAC:
 
 - Use [7-zip](https://www.7-zip.org/) to extract ldapcp.dll from LDAPCP.wsp

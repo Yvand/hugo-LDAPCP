@@ -43,7 +43,7 @@ mainSections = ["docs-se", "docs-classic"]
   searchLimit = 99 # 0 (no limit, default) or natural number
 
   # Global alert
-  alert = true # false (default) or true
+  alert = false # false (default) or true
   alertDismissable = true # true (default) or false
 
   # Bootstrap

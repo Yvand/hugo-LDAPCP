@@ -21,7 +21,7 @@ seo:
 
 {{< callout note >}} [See the announcement](https://github.com/Yvand/LDAPCP/discussions/201) to know more about the reasons for this new claims provider. {{< /callout >}}
 
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} `LDAPCP SE` and `LDAPCP Classic` each have their own configuration, and `LDAPCP SE` cannot import the configuration from `LDAPCP Classic`. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} `LDAPCP SE` and `LDAPCP Classic` each have their own configuration, and `LDAPCP SE` cannot import the configuration from `LDAPCP Classic`. {{< /callout >}}
 
 ## Differences between solutions
 

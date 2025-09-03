@@ -12,8 +12,8 @@ toc: true
 
 This article describes the steps required to remove LDAPCPSE from your SharePoint farm.
 
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} Do not merely retract the solution! The features must be manually deactivated and uninstalled before the solution is retracted. {{< /callout >}}
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} Do all the operations below on the server running the central administration, and in a new PowerShell process. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Do not merely retract the solution! The features must be manually deactivated and uninstalled before the solution is retracted. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Do all the operations below on the server running the central administration, and in a new PowerShell process. {{< /callout >}}
 
 ## Reset property ClaimProviderName in the SPTrustedIdentityTokenIssuer
 

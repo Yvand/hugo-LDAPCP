@@ -25,7 +25,7 @@ After it is commpleted, LDAPCP can be safely re-installed as if it was done for 
 
 ## Remove LDAPCP claims provider
 
-{{< callout context="caution" title="Important" icon="alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors.<br>Execute all the operations below on the server running the central administration. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Always start a new PowerShell process to ensure using up to date persisted objects and avoid nasty errors.<br>Execute all the operations below on the server running the central administration. {{< /callout >}}
 
 This commands removes the SPClaimProvider object from the SharePoint farm:
 
