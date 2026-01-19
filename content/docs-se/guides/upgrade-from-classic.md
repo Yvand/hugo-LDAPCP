@@ -3,7 +3,7 @@ title: "Upgrade from LDAPCP Classic"
 description: ""
 lead: ""
 date: 2021-05-26T09:09:00Z
-lastmod: 2021-08-06T11:15:29Z
+lastmod: 2026-01-19
 draft: false
 images: []
 weight: 300
@@ -19,7 +19,7 @@ seo:
 
 `LDAPCP Classic` and `LDAPCP Second Edition` are 2 independent SharePoint solutions / claims providers. It is perfectly safe to run both on the same SharePoint farm: Installing/updating/removing one has no effect on the other.  
 
-{{< callout note >}} [See the announcement](https://github.com/Yvand/LDAPCP/discussions/201) to know more about the reasons for this new claims provider. {{< /callout >}}
+{{< callout context="note" title="Note" icon="outline/info-circle" >}} [See the announcement](https://github.com/Yvand/LDAPCP/discussions/201) to know more about the reasons for this new claims provider. {{< /callout >}}
 
 {{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} `LDAPCP SE` and `LDAPCP Classic` each have their own configuration, and `LDAPCP SE` cannot import the configuration from `LDAPCP Classic`. {{< /callout >}}
 

@@ -1,22 +1,23 @@
 ---
-title: "Configure the LDAP connection"
+title: "Configure a LDAP connection"
 description: ""
 lead: ""
 date: 2026-01-13
-lastmod: 2026-01-13
+lastmod: 2026-01-19
 draft: false
 images: []
 weight: 300
 toc: true
 ---
 
-By default, LDAPCP connects to the Active Directory the SharePoint servers belong to, as the application pool / process identity.
+By default, LDAPCP connects to the Active Directory the SharePoint servers belong to, as the application pool / process identity.  
+You can replace it with a more secure connection, using LDAPS, or add other connections (there is no limit).
 
 ## Add a LDAPS connection
 
 To encrypt the LDAP traffic between SharePoint and the LDAP server, you can configure the connection to use LDAPS (LDAP over SSL).
 
-{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Before you proceed, ensure that LDAPS is configured on the LDAP server ([documentation for Active Directory](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/enable-ldap-over-ssl-3rd-certification-authority)). Otherwise, you can add a LDAP connection. {{< /callout >}}
+{{< callout context="note" title="Note" icon="outline/info-circle" >}} Before you proceed, ensure that LDAPS is configured on the LDAP server ([documentation for Active Directory](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/enable-ldap-over-ssl-3rd-certification-authority)). {{< /callout >}}
 
 {{< tabs "ldaps-add-connection" >}}
 {{< tab "Central administration" >}}
@@ -55,6 +56,8 @@ $config.ApplySettings($settings, $true)
 {{< /tabs >}}
 
 ## Add a LDAP connection
+
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} With LDAP, the traffic is not encrypted, requests and responses are sent in clear text. {{< /callout >}}
 
 {{< tabs "ldap-add-connection" >}}
 {{< tab "Central administration" >}}
