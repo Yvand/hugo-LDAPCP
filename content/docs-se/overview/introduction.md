@@ -3,7 +3,7 @@ title: "Introduction"
 description: ""
 lead: ""
 date: 2021-05-26T09:09:00Z
-lastmod: 2021-08-06T11:15:29Z
+lastmod: 2026-01-19
 draft: false
 images: []
 weight: 100
@@ -15,7 +15,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-{{< callout note >}} LDAPCP Second Edition is a complete rewrite of LDAPCP (Classic), to replace it and bring major improvements in terms of reliability, administration and features. [See the announcement](https://github.com/Yvand/LDAPCP/discussions/201) to know more about the reasons for this new claims provider. {{< /callout >}}
+{{< callout context="note" title="Note" icon="outline/info-circle" >}} LDAPCP Second Edition is a complete rewrite of LDAPCP (Classic), to replace it and bring major improvements in terms of reliability, administration and features. [See the announcement](https://github.com/Yvand/LDAPCP/discussions/201) to know more about the reasons for this new claims provider. {{< /callout >}}
 
 ## Use case
 

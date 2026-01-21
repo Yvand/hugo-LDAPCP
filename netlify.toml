@@ -6,18 +6,19 @@
   NODE_VERSION = "22.17.0"
   NPM_VERSION = "10.9.2"
   HUGO_VERSION = "0.148.2"
+  NPM_FLAGS = "--include=dev"
 
 [context.production]
-  command = "npm run build"
+  command = "npm ci --include=dev && npm run build"
 
 [context.deploy-preview]
-  command = "npm run build"
+  command = "npm ci --include=dev && npm run build"
 
 [context.branch-deploy]
-  command = "npm run build"
+  command = "npm ci --include=dev && npm run build"
 
 [context.next]
-  command = "npm run build"
+  command = "npm ci --include=dev && npm run build"
 
 [context.next.environment]
   HUGO_ENV = "next"
