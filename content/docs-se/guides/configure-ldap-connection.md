@@ -28,7 +28,7 @@ To add the connection to LDAPCP using the Central Administration:
 - In the section **Register a new LDAP connection**, fill the fields as below:
    - In the **LDAP path**, type the connection using this format: `LDAP://contoso.local:636/DC=contoso,DC=local`.
    - Fill the username and password.
-   - In **Select the authentication type to use**, make sure to select **Encryption**. Other options can also be selected if needed.
+   - In **Select the authentication type to use**, make sure to select **Encryption**. Other options can also be set as needed.
 - Click on **Add LDAP connection** to add the connection.
 
 {{< /tab >}}
@@ -46,7 +46,7 @@ $ldapConnection = New-Object "Yvand.LdapClaimsProvider.Configuration.DirectoryCo
 $ldapConnection.LdapPath = "LDAP://contoso.local:636/DC=contoso,DC=local"
 $ldapConnection.Username = "contoso\serviceAccount"
 $ldapConnection.Password = "<PASSWORD>"
-$ldapConnection.AuthenticationType = [System.DirectoryServices.AuthenticationTypes] "Encryption" # Other options can also be added if needed
+$ldapConnection.AuthenticationType = [System.DirectoryServices.AuthenticationTypes] "Encryption" # Other options can also be set as needed
 
 $settings.LdapConnections.Add($ldapConnection)
 $config.ApplySettings($settings, $true)
@@ -57,7 +57,7 @@ $config.ApplySettings($settings, $true)
 
 ## Add a LDAP connection
 
-{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} With LDAP, the traffic is not encrypted, requests and responses are sent in clear text. {{< /callout >}}
+{{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} With LDAP, the traffic is not encrypted and it will appear in clear text in a network capture. {{< /callout >}}
 
 {{< tabs "ldap-add-connection" >}}
 {{< tab "Central administration" >}}
