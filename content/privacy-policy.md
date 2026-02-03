@@ -13,7 +13,7 @@ seo:
   noindex: false # false (default) or true
 ---
 
-__TLDR__: Neither this site nor this project collects any personal data.
+**TLDR**: Neither this site nor this project collects any personal data.
 
 ## Project privacy policy
 

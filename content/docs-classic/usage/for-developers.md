@@ -34,4 +34,4 @@ For that, the class LDAPCP can be inherited to create a class that will be a new
 - Both LDAPCP.wsp and the custom version need ldapcp.dll. Be aware that updating / removing one package will affect the ldapcp.dll used by the other.
 - To avoid deployment issues, always deactivate the farm feature (which manages the claims provider) before retracting the solution.
 
-If something goes wrong during solution deployment, [check this page]({{< relref "/docs-classic/help/fix-setup-issues" >}}) to resolve problems.  
+If something goes wrong during solution deployment, [check this page]({{< relref "/docs-classic/help/fix-setup-issues" >}}) to resolve problems.

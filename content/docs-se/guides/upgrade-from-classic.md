@@ -17,7 +17,7 @@ seo:
 
 ## Overview
 
-`LDAPCP Classic` and `LDAPCP Second Edition` are 2 independent SharePoint solutions / claims providers. It is perfectly safe to run both on the same SharePoint farm: Installing/updating/removing one has no effect on the other.  
+`LDAPCP Classic` and `LDAPCP Second Edition` are 2 independent SharePoint solutions / claims providers. It is perfectly safe to run both on the same SharePoint farm: Installing/updating/removing one has no effect on the other.
 
 {{< callout context="note" title="Note" icon="outline/info-circle" >}} [See the announcement](https://github.com/Yvand/LDAPCP/discussions/201) to know more about the reasons for this new claims provider. {{< /callout >}}
 
@@ -28,17 +28,17 @@ seo:
 `LDAPCP SE` has higher requirements:
 
 | Minimum version required for | LDAPCP SE | LDAPC Classic |
-|--|--|--|
-| .NET Framework | .NET 4.8 | .NET 4.6.2 |
-| SharePoint version | 2016 | 2013 |
+| ---------------------------- | --------- | ------------- |
+| .NET Framework               | .NET 4.8  | .NET 4.6.2    |
+| SharePoint version           | 2016      | 2013          |
 
 The table below highlights the notable differences in SharePoint:
 
-|  | LDAPCP SE | LDAPC Classic |
-|--|--|--|
-| Claims provider name | LDAPCPSE | LDAPCP |
-| Product/Area in the logs | LDAPCPSE | LDAPCP |
-| SharePoint [solution type](https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ms412929(v=office.14)) | `ApplicationServer` | `WebFrontEnd` |
+|                                                                                                                                          | LDAPCP SE           | LDAPC Classic |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------------- |
+| Claims provider name                                                                                                                     | LDAPCPSE            | LDAPCP        |
+| Product/Area in the logs                                                                                                                 | LDAPCPSE            | LDAPCP        |
+| SharePoint [solution type](<https://learn.microsoft.com/en-us/previous-versions/office/developer/sharepoint-2010/ms412929(v=office.14)>) | `ApplicationServer` | `WebFrontEnd` |
 
 ## Switch between claims providers
 

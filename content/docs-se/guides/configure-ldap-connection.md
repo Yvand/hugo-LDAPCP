@@ -26,9 +26,9 @@ To add the connection to LDAPCP using the Central Administration:
 
 - Navigate to the SharePoint Central Administration > Security > LDAPCP SE Global configuration.
 - In the section **Register a new LDAP connection**, fill the fields as below:
-   - In the **LDAP path**, type the connection using this format: `LDAP://contoso.local:636/DC=contoso,DC=local`.
-   - Fill the username and password.
-   - In **Select the authentication type to use**, make sure to select **Encryption**. Other options can also be set as needed.
+  - In the **LDAP path**, type the connection using this format: `LDAP://contoso.local:636/DC=contoso,DC=local`.
+  - Fill the username and password.
+  - In **Select the authentication type to use**, make sure to select **Encryption**. Other options can also be set as needed.
 - Click on **Add LDAP connection** to add the connection.
 
 {{< /tab >}}
@@ -66,9 +66,9 @@ To add the connection to LDAPCP using the Central Administration:
 
 - Navigate to the SharePoint Central Administration > Security > LDAPCP SE Global configuration.
 - In the section **Register a new LDAP connection**, fill the fields as below:
-   - In the **LDAP path**, type the connection using this format: `LDAP://contoso.local/DC=contoso,DC=local`.
-   - Fill the username and password.
-   - In **Select the authentication type to use**, select the options as needed.
+  - In the **LDAP path**, type the connection using this format: `LDAP://contoso.local/DC=contoso,DC=local`.
+  - Fill the username and password.
+  - In **Select the authentication type to use**, select the options as needed.
 - Click on **Add LDAP connection** to add the connection.
 
 {{< /tab >}}

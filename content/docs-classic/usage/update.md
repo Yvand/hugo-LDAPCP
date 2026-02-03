@@ -22,14 +22,14 @@ On the server running the central administration:
 
 1. Start a SharePoint management shell and run `Update-SPSolution`:
 
-  ```powershell
-  # This will start a timer job that will deploy the update on SharePoint servers. Central administration will restart during the process
-  Update-SPSolution -GACDeployment -Identity "LDAPCP.wsp" -LiteralPath "F:\Data\Dev\LDAPCP.wsp"
-  ```
+```powershell
+# This will start a timer job that will deploy the update on SharePoint servers. Central administration will restart during the process
+Update-SPSolution -GACDeployment -Identity "LDAPCP.wsp" -LiteralPath "F:\Data\Dev\LDAPCP.wsp"
+```
 
 2. Visit central administration > System Settings > Manage farm solutions: Wait until solution status shows "Deployed".
-  {{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Be patient, cmdlet Update-SPSolution triggers a one-time timer job on the SharePoint servers and this may take a minute or 2. {{< /callout >}}
-  > If status shows "Error", restart the SharePoint timer service on servers where depployment failed, start a new PowerShell process and run Update-SPSolution again.
+   {{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Be patient, cmdlet Update-SPSolution triggers a one-time timer job on the SharePoint servers and this may take a minute or 2. {{< /callout >}}
+   > If status shows "Error", restart the SharePoint timer service on servers where depployment failed, start a new PowerShell process and run Update-SPSolution again.
 
 ## Finalize the update
 

@@ -6,7 +6,7 @@ date: 2021-05-17T13:24:28Z
 lastmod: 2021-05-17T13:24:28Z
 draft: false
 images: []
-menu: 
+menu:
   docs-classic:
     parent: "classic-help"
     identifier: "classic-troubleshooting"
@@ -57,7 +57,7 @@ $objSearcher = New-Object System.DirectoryServices.DirectorySearcher ($directory
 # Uncomment line below to restrict properties returned by LDAP server
 #$objSearcher.PropertiesToLoad.AddRange(@("cn"))
 
-$results = $objSearcher.FindAll() 
+$results = $objSearcher.FindAll()
 Write-Host "Found $($results.Count) result(s)":
 foreach ($objResult in $results)    {$objItem = $objResult.Properties; $objItem}
 ```
