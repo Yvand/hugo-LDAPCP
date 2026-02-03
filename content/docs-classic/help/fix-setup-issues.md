@@ -6,7 +6,7 @@ date: 2021-05-17T13:24:40Z
 lastmod: 2021-05-17T13:24:40Z
 draft: false
 images: []
-menu: 
+menu:
   docs-classic:
     parent: "classic-help"
     identifier: "classic-fix-setup-issues"
@@ -58,9 +58,9 @@ RootDirectory : C:\Program Files\Common Files\Microsoft Shared\Web Server Extens
 For each feature listed above, check if its "RootDirectory" actually exists in the file system of the current server.  
 If it does not exist:
 
-* Create the "RootDirectory". Based on output above, it would be "LDAPCP" in folder "16\Template\Features"
-* Use [7-zip](http://www.7-zip.org/) to open LDAPCP.wsp and extract the feature.xml of the corresponding feature
-* Copy the feature.xml into the "RootDirectory"
+- Create the "RootDirectory". Based on output above, it would be "LDAPCP" in folder "16\Template\Features"
+- Use [7-zip](http://www.7-zip.org/) to open LDAPCP.wsp and extract the feature.xml of the corresponding feature
+- Copy the feature.xml into the "RootDirectory"
 
 3. Deactivate and remove the features
 
@@ -87,5 +87,4 @@ stsadm -o deleteconfigurationobject -id 5D306A02-A262-48AC-8C44-BDB927620227
 Remove-SPSolution "LDAPCP.wsp" -Confirm:$false
 ```
 
-Close PowerShell.  
-
+Close PowerShell.

@@ -5,45 +5,43 @@ var GitHubStatistics;
 (function (GitHubStatistics) {
     var RepoStats = /** @class */ (function () {
         function RepoStats() {
-            this.url = "https://func-api-qqr6sxmfuyb34.azurewebsites.net/api/GetData";
+            this.url = 'https://func-api-qqr6sxmfuyb34.azurewebsites.net/api/GetData';
         }
         RepoStats.prototype.getLatestStat = function () {
             // console.log("Sending query to " + this.url);
             $.ajax({
-                method: "GET",
+                method: 'GET',
                 crossDomain: true,
                 data: {
-                    project: "Yvand/LDAPCP",
-                    code: "",
+                    project: 'Yvand/LDAPCP',
+                    code: ''
                 },
-                dataType: "jsonp",
+                dataType: 'jsonp',
                 // mimeType: "application/javascript",
-                jsonpCallback: "GitHubStatistics.RepoStats.parseGitHubStatisticsResponse",
+                jsonpCallback: 'GitHubStatistics.RepoStats.parseGitHubStatisticsResponse',
                 url: this.url,
-                success: function (responseData, textStatus, jqXHR) {
-                },
+                success: function (responseData, textStatus, jqXHR) {},
                 error: function (responseData, textStatus, errorThrown) {
-                    console.log("Request to " + this.url + " failed: " + errorThrown);
+                    console.log('Request to ' + this.url + ' failed: ' + errorThrown);
                 }
             });
         };
         RepoStats.decodeJSONResponse = function (json) {
             var obj = Object.assign({}, json, {
-            //created: new Date(json.DateStatCreatedUTC)
+                //created: new Date(json.DateStatCreatedUTC)
             });
             return obj;
         };
         RepoStats.parseGitHubStatisticsResponse = function (data) {
             var result = GitHubStatistics.RepoStats.decodeJSONResponse(data);
-            $("#TotalDownloadCount").text(result.TotalDownloadCount.toLocaleString(undefined));
-            $("#LatestReleaseDownloadCount").text(result.LatestReleaseDownloadCount.toLocaleString(undefined));
+            $('#TotalDownloadCount').text(result.TotalDownloadCount.toLocaleString(undefined));
+            $('#LatestReleaseDownloadCount').text(result.LatestReleaseDownloadCount.toLocaleString(undefined));
             // $("#LatestReleaseTagName").text(result.LatestReleaseTagName);
             // $("#LatestAssetUrl").attr("href", result.LatestAssetUrl)
             //$("#LatestReleaseCreationDate").text(result.LatestReleaseCreationDate);
         };
-        ;
         return RepoStats;
-    }());
+    })();
     GitHubStatistics.RepoStats = RepoStats;
 })(GitHubStatistics || (GitHubStatistics = {}));
 $(document).ready(function () {

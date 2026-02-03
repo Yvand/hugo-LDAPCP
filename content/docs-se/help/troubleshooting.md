@@ -48,7 +48,7 @@ $objSearcher = New-Object System.DirectoryServices.DirectorySearcher ($directory
 # Uncomment line below to restrict properties returned by LDAP server
 #$objSearcher.PropertiesToLoad.AddRange(@("cn"))
 
-$results = $objSearcher.FindAll() 
+$results = $objSearcher.FindAll()
 Write-Host "Found $($results.Count) result(s)":
 foreach ($objResult in $results)    {$objItem = $objResult.Properties; $objItem}
 ```

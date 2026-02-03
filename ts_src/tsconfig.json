@@ -1,12 +1,10 @@
 {
-    "compilerOptions": {
-        "sourceMap": false,
-        "outDir": "../static/js",
-        "skipLibCheck": true,
-        "lib": ["ES2015", "DOM"]
-    },
-    "compileOnSave": true,
-    "files": [
-        "gitHubStatistics.ts"
-    ]
+  "compilerOptions": {
+    "sourceMap": false,
+    "outDir": "../static/js",
+    "skipLibCheck": true,
+    "lib": ["ES2015", "DOM"]
+  },
+  "compileOnSave": true,
+  "files": ["gitHubStatistics.ts"]
 }

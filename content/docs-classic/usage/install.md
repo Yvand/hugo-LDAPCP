@@ -1,7 +1,7 @@
 ---
 aliases:
-- /docs/usage/install/
-- install2/
+  - /docs/usage/install/
+  - install2/
 title: "Install"
 description: "Install LDAPCP"
 lead: "Install LDAPCP in your SharePoint farm"
@@ -28,8 +28,8 @@ This page will guide you through the steps to install LDAPCP in a safe and relia
 Execute the following steps:
 
 - Download [the latest version](https://github.com/Yvand/LDAPCP/releases/latest) of LDAPCP.wsp.
-- Install and deploy the solution, using either the __simple__ or the __safe__ method:
-  - __Simple__ method: Recommended for single-server farms only:
+- Install and deploy the solution, using either the **simple** or the **safe** method:
+  - **Simple** method: Recommended for single-server farms only:
 
   ```powershell
   # Run this script on the server running central administration, in a new PowerShell process
@@ -38,9 +38,9 @@ Execute the following steps:
   # Then run Install-SPSolution (without -Local) to deploy solution globally (on all servers that run service "Microsoft SharePoint Foundation Web Application"):
   Install-SPSolution -Identity "LDAPCP.wsp" -GACDeployment
   ```
-  
-  - __Safe__ method: Recommended for production environments with multiple servers:
-  
+
+  - **Safe** method: Recommended for production environments with multiple servers:
+
   {{< callout context="caution" title="Important" icon="outline/alert-triangle" >}} Run this script on ALL SharePoint servers running the service \"Microsoft SharePoint Foundation Web Application\" and/or the central administration, sequentially (not in parallel), starting with the server running the central administration. {{< /callout >}}
 
   ```powershell
@@ -132,7 +132,7 @@ For each of those servers, complete the steps below to manually add/update ldapc
   ```
 
 - Restart the IIS service and the SharePoint timer service (SPTimerV4):  
-`Restart-Service W3SVC; Restart-Service SPTimerV4`
+  `Restart-Service W3SVC; Restart-Service SPTimerV4`
 
 ## Enable the claims provider
 

@@ -313,6 +313,7 @@
       "enable-augmentation",
       "enable-the-claims-provider",
       "ensure-augmentation-is-enabled-in-ldapcp",
+      "false",
       "features",
       "finalize-the-installation",
       "finalize-the-update",

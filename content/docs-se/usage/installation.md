@@ -17,7 +17,7 @@ Installing LDAPCP SE is much easier and safer than LDAPCP Classic because it use
 
 - Its features are installed with a specific, additional step, preventing conflicts.
 - Its assemblies are deployed on truly all SharePoint servers.
-{{< /details >}}
+  {{< /details >}}
 
 ## Download the latest release
 
@@ -94,17 +94,17 @@ Do the following on the server running the central administration:
 
 1. Add the solution to the farm:
 
-    ```powershell
-    Add-SPSolution -LiteralPath "C:\YvanData\dev\LDAPCPSE.wsp"
-    ```
+   ```powershell
+   Add-SPSolution -LiteralPath "C:\YvanData\dev\LDAPCPSE.wsp"
+   ```
 
 1. Navigate to the central administration > Security > Manage farm solutions > click on "LDAPCPSE.wsp" > Deploy solution.
 1. Monitor the deployment of the solution and wait for it to be fully deployed.
 1. Install the features present in the solution:
 
-    ```powershell
-    Install-SPFeature -SolutionId "ff36c8cf-e510-42fc-8ba3-18af3c316aec" -AllExistingFeatures
-    ```
+   ```powershell
+   Install-SPFeature -SolutionId "ff36c8cf-e510-42fc-8ba3-18af3c316aec" -AllExistingFeatures
+   ```
 
 {{< /tab >}}
 {{< /tabs >}}
