@@ -173,6 +173,8 @@
       "justify-content-start",
       "last-modified",
       "lead",
+      "link",
+      "link--text",
       "list",
       "list-inline",
       "list-inline-item",
