@@ -27,12 +27,6 @@ copyRight = "Copyright (c) 2026 Yvan Duhamel"
   taxonomy = ["html", "rss", "sitemap"]
   term = ["html", "rss", "sitemap"]
 
-[outputFormats.searchIndex]
-  mediaType = "application/json"
-  baseName = "search-index"
-  isPlainText = true
-  notAlternative = true
-
 [outputFormats.markdown]
   baseName = "index"
   isHTML = false
@@ -44,6 +38,17 @@ copyRight = "Copyright (c) 2026 Yvan Duhamel"
   isHTML = false
   isPlainText = true
   mediaType = "text/plain"
+
+[caches]
+  [caches.getresource]
+    dir = ":cacheDir/:project"
+    maxAge = -1 # "30m"
+
+[outputFormats.searchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
 
 # Add output format for section sitemap.xml
 [outputFormats.sitemap]
@@ -58,11 +63,6 @@ copyRight = "Copyright (c) 2026 Yvan Duhamel"
   changefreq = "monthly"
   filename = "sitemap.xml"
   priority = 0.5
-
-[caches]
-  [caches.getresource]
-    dir = ":cacheDir/:project"
-    maxAge = -1 # "30m"
 
 [taxonomies]
   contributor = "contributors"
