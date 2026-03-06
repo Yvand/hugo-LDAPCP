@@ -15,14 +15,6 @@
   echo "URL=[$URL]"
   """
 
-[dev]
-  framework = "#custom"
-  command = "bun run dev"
-  targetPort = 1313
-  port = 8888
-  publish = "public"
-  autoLaunch = false
-
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
 	from = "/*"

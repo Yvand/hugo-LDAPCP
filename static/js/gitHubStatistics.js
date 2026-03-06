@@ -20,7 +20,7 @@ var GitHubStatistics;
                 // mimeType: "application/javascript",
                 jsonpCallback: 'GitHubStatistics.RepoStats.parseGitHubStatisticsResponse',
                 url: this.url,
-                success: function (responseData, textStatus, jqXHR) {},
+                success: function (responseData, textStatus, jqXHR) { },
                 error: function (responseData, textStatus, errorThrown) {
                     console.log('Request to ' + this.url + ' failed: ' + errorThrown);
                 }
@@ -28,7 +28,7 @@ var GitHubStatistics;
         };
         RepoStats.decodeJSONResponse = function (json) {
             var obj = Object.assign({}, json, {
-                //created: new Date(json.DateStatCreatedUTC)
+            //created: new Date(json.DateStatCreatedUTC)
             });
             return obj;
         };
@@ -41,7 +41,7 @@ var GitHubStatistics;
             //$("#LatestReleaseCreationDate").text(result.LatestReleaseCreationDate);
         };
         return RepoStats;
-    })();
+    }());
     GitHubStatistics.RepoStats = RepoStats;
 })(GitHubStatistics || (GitHubStatistics = {}));
 $(document).ready(function () {
